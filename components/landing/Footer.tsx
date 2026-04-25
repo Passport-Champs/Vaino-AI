@@ -22,6 +22,22 @@ function LinkedinMark({ className }: { className?: string }) {
   );
 }
 
+function InstagramMark({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} fill="currentColor">
+      <path d="M12 0C5.37 0 0 5.37 0 12c0 6.63 5.37 12 12 12s12-5.37 12-12S18.63 0 12 0zm5.521 17.34c-.24.99-.738 1.684-1.684 1.924-.99.25-3.708.487-6.837.487-3.129 0-5.847-.237-6.836-.487-.946-.24-1.446-.934-1.684-1.924-.25-.99-.487-3.708-.487-6.837 0-3.129.237-5.847.487-6.836.24-.99.738-1.684 1.684-1.924.99-.25 3.708-.487 6.837-.487 3.129 0 5.847.237 6.836.487.946.24 1.446.934 1.684 1.924.25.99.487 3.708.487 6.837 0 3.129-.237 5.847-.487 6.836zM5.894 9.073c.204-.305.667-.905.742-1.237.03-.15.046-.417.046-.653 0-.666-.279-1.285-.606-1.666-.131-.156-.293-.315-.455-.315H4.278c-.309 0-.779.245-.779.952 0 .338.035.578.118.816.199.692.881 1.41 1.277 1.103zm6.106.575c-.204.305-.667.905-.742 1.237-.03.15-.046.417-.046.653 0 .666.279 1.285.606 1.666.131.156.293.315.455.315h1.303c.309 0 .779-.245.779-.952 0-.338-.035-.578-.118-.816-.199-.692-.881-1.41-1.277-1.103zm0-3.296c-.204.305-.667.905-.742 1.237-.03.15-.046.417-.046.653 0 .666.279 1.285.606 1.666.131.156.293.315.455.315h1.303c.309 0 .779-.245.779-.952 0-.338-.035-.578-.118-.816-.199-.692-.881-1.41-1.277-1.103z" />
+    </svg>
+  );
+}
+
+function FacebookMark({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} fill="currentColor">
+      <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+    </svg>
+  );
+}
+
 const NAV = [
   {
     heading: "Engine",
@@ -75,7 +91,7 @@ export function Footer() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 />
-                <circle cx="14" cy="14" r="2" fill="url(#fg)" />
+                 <circle cx="14" cy="14" r="2" fill="url(#fg)" />
               </svg>
               <span className="text-sm font-semibold tracking-tight text-white">
                 Vaino AI
@@ -85,25 +101,28 @@ export function Footer() {
               </span>
             </div>
             <p className="mt-4 max-w-sm text-sm text-white/50 text-balance">
-              The world's first Human Intelligence Engine. Trillions of
+              The world{"'"}s first Human Intelligence Engine. Trillions of
               active parameters. Lifelong reinforcement learning. Strategic
               execution, not prediction.
             </p>
             <div className="mt-5 flex items-center gap-2">
-              {[
-                { icon: GithubMark, href: "#" },
-                { icon: XMark, href: "#" },
-                { icon: LinkedinMark, href: "#" },
-              ].map(({ icon: Icon, href }, i) => (
-                <a
-                  key={i}
-                  href={href}
-                  className="inline-flex size-8 items-center justify-center rounded-lg border border-white/10 bg-white/[0.03] text-white/60 transition hover:border-cyan-400/40 hover:text-cyan-300"
-                >
-                  <Icon className="size-3.5" />
-                </a>
-              ))}
-            </div>
+                {[
+                  { icon: LinkedinMark, href: "https://www.linkedin.com/company/passport-champs/about/" },
+                  { icon: InstagramMark, href: "https://www.instagram.com/passportchamps/" },
+                  { icon: XMark, href: "https://x.com/passportchamps" },
+                  { icon: FacebookMark, href: "https://www.facebook.com/profile.php?id=61576221040784" },
+                ].map(({ icon: Icon, href }, i) => (
+                  <a
+                    key={i}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex size-8 items-center justify-center rounded-lg border border-white/10 bg-white/[0.03] text-white/60 transition hover:border-cyan-400/40 hover:text-cyan-300"
+                  >
+                    <Icon className="size-3.5" />
+                  </a>
+                ))}
+              </div>
           </div>
 
           {NAV.map((col) => (

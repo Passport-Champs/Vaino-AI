@@ -62,22 +62,26 @@ export function TechnicalSummary() {
           <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-3 py-1">
             <InfinityIcon className="size-3 text-cyan-300" />
             <span className="font-mono-tech text-[10px] uppercase tracking-[0.22em] text-white/60">
-              § 04 · AGI Horizon · Synthetic Data Flywheel
+              § 04 · Continuous Learning · Data Flywheel
             </span>
           </div>
 
           <h2 className="mt-6 text-4xl md:text-6xl font-semibold tracking-tight text-white text-balance">
-            The architecture of the
-            <span className="block text-neural">inevitable future.</span>
+            A system that improves
+            <span className="block text-neural">every time it runs.</span>
           </h2>
 
           <p className="mt-6 max-w-3xl text-base md:text-lg text-white/60 text-balance">
-            Vaino is built with an ever-evolving Neocortex. Through{" "}
-            <span className="text-white/85">Synthetic Data Flywheels</span> and{" "}
-            <span className="text-white/85">Human-in-the-Loop Reinforcement</span>,
-            Vaino is the first AI to achieve <span className="text-white/85">Lifelong Learning</span>.
-            It doesn't just know what happened yesterday — it is actively
-            learning what is happening now to predict what happens tomorrow.
+            Vaino is designed around a{" "}
+            <span className="text-white/85">continuous learning loop</span>.
+            Through{" "}
+            <span className="text-white/85">synthetic data flywheels</span>{" "}
+            and{" "}
+            <span className="text-white/85">human-in-the-loop reinforcement</span>,
+            the system gets sharper with each session — not through
+            retraining, but through structured feedback built into every
+            interaction. It doesn't just know what happened yesterday; it is
+            actively learning from what is happening now.
           </p>
 
           {/* Flywheel visual */}
@@ -98,7 +102,7 @@ export function TechnicalSummary() {
               className="group inline-flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/[0.03] px-6 py-3 text-sm text-white/80 backdrop-blur transition hover:border-white/20 hover:bg-white/[0.06]"
             >
               <Sparkles className="size-4 text-cyan-300" />
-              Explore the Cortex
+              Explore the System
             </a>
             <div className="ml-auto hidden sm:flex items-center gap-2 font-mono-tech text-[11px] uppercase tracking-[0.16em] text-white/40">
               <Lock className="size-3" />
@@ -144,7 +148,7 @@ function Flywheel() {
               ))}
             </defs>
 
-            {segments.map((s, i) => {
+            {segments.map((_s, i) => {
               const start = (i / segments.length) * 360 - 90;
               const end = ((i + 1) / segments.length) * 360 - 90;
               const large = end - start > 180 ? 1 : 0;

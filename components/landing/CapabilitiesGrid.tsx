@@ -39,7 +39,7 @@ const CAPABILITIES: Capability[] = [
     level: 3,
     icon: Route,
     summary:
-      "Sub-millisecond selection of specialized LLM backends based on query complexity and domain.",
+      "Each query is routed in sub-millisecond time to the most capable model for the task — by domain, complexity, and required depth.",
     span: "md:col-span-2",
   },
   {
@@ -49,7 +49,7 @@ const CAPABILITIES: Capability[] = [
     level: 2,
     icon: Waves,
     summary:
-      "Decision-making tuned to real-time global 'vibrations' and live data streams.",
+      "Factors in live data — news, markets, regional signals — to weight decisions against what is actually happening right now.",
   },
   {
     id: "debate",
@@ -58,7 +58,7 @@ const CAPABILITIES: Capability[] = [
     level: 3,
     icon: GitBranch,
     summary:
-      "An internal debate where multiple experts cross-verify outputs before delivery.",
+      "Multiple models cross-check each other's outputs before a response is returned. Disagreements are resolved, not suppressed.",
   },
   {
     id: "multimodal",
@@ -67,7 +67,7 @@ const CAPABILITIES: Capability[] = [
     level: 2,
     icon: Layers,
     summary:
-      "Simultaneous processing of visual, linguistic, and structured data into singular strategic action.",
+      "Processes text, images, and structured data together — translating mixed inputs into a single coherent action or recommendation.",
   },
   {
     id: "agentic",
@@ -76,7 +76,7 @@ const CAPABILITIES: Capability[] = [
     level: 3,
     icon: Network,
     summary:
-      "Not just plans — executes: actions, code, filings, API traversal. Independent agency.",
+      "Goes beyond generating a plan — actually executes it. Runs code, calls APIs, navigates workflows, handles bookings. No hand-holding required.",
     span: "md:col-span-2",
   },
   {
@@ -86,7 +86,7 @@ const CAPABILITIES: Capability[] = [
     level: 3,
     icon: Compass,
     summary:
-      "Mapping the future impact of geopolitical shifts on physical, financial, and digital assets.",
+      "Tracks regulatory, political, and economic shifts to surface downstream impact on travel, assets, and operations before they materialize.",
   },
   {
     id: "parametric",
@@ -95,7 +95,7 @@ const CAPABILITIES: Capability[] = [
     level: 2,
     icon: Gauge,
     summary:
-      "Real-time scaling of active parameters — speed when needed, depth when required.",
+      "Dynamically scales active model capacity — lighter for speed-sensitive tasks, heavier when depth and precision are required.",
   },
   {
     id: "bias",
@@ -104,17 +104,17 @@ const CAPABILITIES: Capability[] = [
     level: 2,
     icon: SlidersHorizontal,
     summary:
-      "Tune the AI's personality — from cold logic to empathetic collaborator.",
+      "Adjust how Vaino communicates — from precise and formal to contextual and conversational — depending on who is asking and why.",
     span: "md:col-span-2",
   },
   {
     id: "agi",
-    title: "AGI Horizon Bridge",
-    tag: "World Model",
+    title: "Adaptive World Model",
+    tag: "Context Engine",
     level: 3,
     icon: BrainCog,
     summary:
-      "Every interaction integrated into a private, evolving world model for the user.",
+      "Every session refines Vaino's understanding of your context, objectives, and preferences — building a working model that improves with use.",
   },
   {
     id: "lora",
@@ -123,7 +123,7 @@ const CAPABILITIES: Capability[] = [
     level: 2,
     icon: Binary,
     summary:
-      "Swap Low-Rank Adaptations on the fly — Tax Law now, Flight Optimization next.",
+      "Swaps domain-specific fine-tunes in real time — from legal reasoning to itinerary optimization — without reloading the underlying model.",
   },
   {
     id: "anomaly",
@@ -132,7 +132,7 @@ const CAPABILITIES: Capability[] = [
     level: 3,
     icon: Radar,
     summary:
-      "Monitoring sentiment deltas between live data and historical baselines to predict disruptions.",
+      "Compares live signals against historical baselines to flag emerging anomalies — relevant for travel risk, market exposure, and supply chain decisions.",
   },
   {
     id: "pruning",
@@ -141,16 +141,16 @@ const CAPABILITIES: Capability[] = [
     level: 1,
     icon: Scissors,
     summary:
-      "Keeps the context window clean and fast by discarding irrelevant noise mid-session.",
+      "Keeps the active context window lean by automatically removing irrelevant information mid-session, preserving speed without losing signal.",
   },
   {
     id: "intent",
     title: 'The "Human Intent" Interface',
-    tag: "Intent → SQL",
+    tag: "Intent → Query",
     level: 3,
     icon: Eye,
     summary:
-      "A proprietary translation layer that turns vague human desire into structured query for the MoE.",
+      "Parses imprecise, natural language requests into structured queries the underlying models can act on — bridging human intent and machine execution.",
   },
 ];
 
@@ -165,8 +165,8 @@ export function CapabilitiesGrid() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
         <SectionHeader
           eyebrow="§ 02 · Core Capabilities"
-          title="Thirteen systems. One synaptic engine."
-          description="Every capability is a first-class node in the cortex — independently routable, jointly reasoned. Together they define Vaino's innovative edge."
+          title="Thirteen capabilities. One unified engine."
+          description="Each module is independently routable and purpose-built — but coordinated through a single orchestration layer. Together they define what intelligent execution actually looks like."
         />
 
         <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-4 auto-rows-[minmax(180px,auto)]">

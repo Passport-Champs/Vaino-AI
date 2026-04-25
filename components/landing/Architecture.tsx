@@ -32,18 +32,18 @@ export function Architecture() {
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
         <SectionHeader
-          eyebrow="§ 03 · Neural Cortex Architecture"
-          title="Autonomous cognitive scaling."
-          highlight="Lifelong learning loops."
-          description="Vaino's cortex is a three-stage memory system wrapped in self-evolving reinforcement. Not retraining cycles — synaptic continuity."
+          eyebrow="§ 03 · System Architecture"
+          title="Built to learn."
+          highlight="Continuously, in real time."
+          description="Vaino uses a three-stage memory pipeline backed by automated preference optimization. Outputs improve with every session — no manual retraining, no scheduled cycles."
         />
 
         {/* Stage 1: Three-stage memory */}
         <div className="mt-16 md:mt-20">
           <SubHeader
             index="3.1"
-            title="The Three-Stage Memory Model"
-            caption="Sensory Buffer → Working Memory → Long-Term Cortex"
+            title="Three-Stage Memory Pipeline"
+            caption="Input Layer → Active Context → Knowledge Store"
           />
           <MemoryPipeline />
         </div>
@@ -52,8 +52,8 @@ export function Architecture() {
         <div className="mt-20 md:mt-28">
           <SubHeader
             index="3.2"
-            title="Self-Evolving DPO"
-            caption="Direct Preference Optimization · automated gating refinement"
+            title="Automated Preference Optimization"
+            caption="DPO · continuous routing refinement"
           />
           <DpoFlow />
         </div>
@@ -83,26 +83,26 @@ const STAGES: {
   {
     id: "sensory",
     icon: Ear,
-    name: "Sensory Buffer",
-    tag: "Stage 01 · Input",
-    body: "Rapid processing of live Grok and social data streams for immediate sentiment vectorization.",
+    name: "Input Layer",
+    tag: "Stage 01 · Ingestion",
+    body: "Ingests live data — news feeds, market signals, travel alerts, social streams — and converts it into structured context in real time.",
     meta: ["412k tok/s", "<8ms latency", "ephemeral"],
   },
   {
     id: "working",
     icon: MemoryStick,
-    name: "Working Memory",
-    tag: "Stage 02 · Prefrontal Cortex",
-    body: "10M+ token context window (Gemini-Ultra class) for active session reasoning and multi-step planning.",
+    name: "Active Context",
+    tag: "Stage 02 · Session Memory",
+    body: "Holds the full active session state across a large context window — enabling multi-step reasoning, long-horizon planning, and complex task coordination.",
     meta: ["10M+ tokens", "multi-turn", "session-scope"],
   },
   {
     id: "longterm",
     icon: Database,
-    name: "Long-Term Cortex",
+    name: "Knowledge Store",
     tag: "Stage 03 · Consolidation",
-    body: "High-fidelity insights consolidated into an encrypted Vector Knowledge Base that grows with every interaction.",
-    meta: ["encrypted", "vector KB", "lifelong"],
+    body: "High-value outputs and user context are stored in an encrypted vector database — retrieval-ready and persistently growing with every interaction.",
+    meta: ["encrypted", "vector KB", "persistent"],
   },
 ];
 
@@ -158,7 +158,7 @@ function MemoryPipeline() {
         <div className="inline-flex items-center gap-3 rounded-full border border-white/10 bg-obsidian-900/70 px-4 py-1.5 backdrop-blur">
           <InfinityIcon className="size-3.5 text-cyan-300" />
           <span className="font-mono-tech text-[11px] uppercase tracking-[0.18em] text-white/55">
-            Consolidation loop · feeds back into synaptic weights
+            Retrieval loop · context-aware recall on every request
           </span>
         </div>
       </div>
@@ -257,20 +257,20 @@ function DpoFlow() {
             DPO · Discriminator Loop
           </span>
           <h4 className="mt-3 text-2xl md:text-3xl font-semibold tracking-tight text-white text-balance">
-            When experts disagree, the cortex learns.
+            When models disagree, the system self-corrects.
           </h4>
           <p className="mt-4 text-sm md:text-base text-white/60 text-balance">
-            Gemini and Mistral emit parallel outputs. A Discriminator node
-            analyzes outcomes downstream and updates the Sparse Gating
-            Network to prefer the higher-fidelity path on future queries —
-            automatically, continuously, with zero human retraining.
+            When two models produce conflicting outputs, a Discriminator
+            evaluates which path produced the better result and updates the
+            routing weights accordingly — automatically, on every cycle,
+            with no human intervention required.
           </p>
 
           <ul className="mt-5 space-y-2">
             {[
-              ["Discriminator", "Evaluates divergence in real time"],
-              ["Preference Δ", "Emitted as gating weight update"],
-              ["Gating Network", "Sparse activation, rebalanced"],
+              ["Discriminator", "Evaluates output quality in real time"],
+              ["Preference Δ", "Recorded as a routing weight update"],
+              ["Gating Network", "Rebalanced toward higher-quality paths"],
             ].map(([k, v]) => (
               <li
                 key={k}
@@ -341,7 +341,7 @@ function DpoFlow() {
               opacity="0.75"
               letterSpacing="2"
             >
-              FEEDBACK · SYNAPTIC UPDATE
+              FEEDBACK · ROUTING UPDATE
             </text>
           </svg>
 
@@ -464,16 +464,17 @@ function AdversarialCard() {
             <Swords className="size-[18px] text-ultra-400" />
           </div>
           <span className="font-mono-tech text-[10px] uppercase tracking-[0.18em] text-white/55">
-            § 3.3 · Adversarial Synthesis
+            § 3.3 · Internal Critique Loop
           </span>
         </div>
       </div>
       <h4 className="mt-5 text-xl font-semibold tracking-tight text-white">
-        Generator vs. Discriminator. Internally.
+        The system critiques its own outputs before they reach you.
       </h4>
       <p className="mt-2 text-sm text-white/55 text-balance">
-        Vaino runs continuous GAN-style simulations, critiquing its own
-        reasoning and data outputs until convergence to high-fidelity.
+        Before returning a result, Vaino runs an internal critique pass — a
+        generator/discriminator loop that stress-tests outputs for
+        consistency, accuracy, and logical coherence.
       </p>
 
       {/* GAN visual */}
@@ -558,17 +559,18 @@ function RagCard() {
             <Search className="size-[18px] text-cyan-300" />
           </div>
           <span className="font-mono-tech text-[10px] uppercase tracking-[0.18em] text-white/55">
-            § 3.4 · RAG-Adaptive Fine-Tuning
+            § 3.4 · Adaptive Knowledge Retrieval
           </span>
         </div>
       </div>
       <h4 className="mt-5 text-xl font-semibold tracking-tight text-white">
-        Agentic-RAG closes its own knowledge gaps.
+        When Vaino doesn't know something, it goes and finds it.
       </h4>
       <p className="mt-2 text-sm text-white/55 text-balance">
-        Most systems search. Vaino identifies missing parameters and
-        autonomously triggers Deep Crawl — absorbing and indexing the
-        delta back into the cortex.
+        Standard RAG retrieves from what's already indexed. Vaino detects
+        gaps in its own knowledge base and triggers a targeted crawl —
+        indexing new information directly into the knowledge store before
+        responding.
       </p>
 
       <ol className="mt-6 space-y-2.5">
@@ -576,17 +578,17 @@ function RagCard() {
           {
             icon: BrainCircuit,
             step: "01",
-            label: "Detect knowledge gap in response trajectory",
+            label: "Identifies a knowledge gap in the response path",
           },
           {
             icon: Search,
             step: "02",
-            label: "Spawn Deep Crawl · target domain vectorization",
+            label: "Triggers targeted retrieval and vectorization",
           },
           {
             icon: Database,
             step: "03",
-            label: "Index delta → Long-Term Cortex",
+            label: "Indexes new knowledge into the knowledge store",
           },
           {
             icon: Shield,

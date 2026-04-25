@@ -43,8 +43,8 @@ function NeuralCortexSkeleton() {
 }
 
 const STATS = [
-  { label: "Active Params", value: "1.5T" },
-  { label: "Context Window", value: "10M+ tok" },
+  { label: "Model Routing", value: "Dynamic" },
+  {label: "Context Handling", value: "Adaptive" },
   { label: "Expert Routes", value: "< 1ms" },
   { label: "Memory Stages", value: "3-tier" },
 ];
@@ -128,14 +128,13 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.3 }}
           className="mx-auto mt-7 max-w-2xl text-center text-base md:text-lg text-white/60 text-balance"
-        >
-          Advancing from generative mimicry to autonomous agency via the{" "}
-          <span className="text-white/85 font-medium">
+        >Vaino AI is an orchestration engine that uses the
+
+  <span className="text-white/85 font-medium">
+  {" "}
             Agentic Orchestration Matrix (AoM)
-          </span>
-          . Trillions of active parameters, a self-optimizing Neural Cortex, and
-          lifelong reinforcement — not text prediction, but{" "}
-          <span className="text-white/85">strategic execution</span>.
+          </span>  to route specialized models for real-time planning, reasoning, and execution. It adapts to user context, inputs, and environment for globally aware, context-driven decision making.
+
         </motion.p>
 
         {/* CTAs */}
@@ -206,9 +205,9 @@ export function Hero() {
               </span>
               <Sparkles className="size-3.5 text-cyan-300/80" />
             </div>
-            <ExpertNode name="Gemini-Ultra" role="Deep Reasoning" weight={0.46} active />
-            <ExpertNode name="Grok-Live" role="Sentiment Stream" weight={0.21} />
-            <ExpertNode name="Mistral-Logic" role="Structured Logic" weight={0.33} />
+            <ExpertNode name="Reasoning Engine" role="Deep Reasoning" weight={0.46} active />
+            <ExpertNode name="Real Time Signal Model" role="Sentiment Stream" weight={0.21} />
+            <ExpertNode name="Logic Processor" role="Structured Logic" weight={0.33} />
 
             <div className="mt-1 rounded-xl border border-white/5 bg-obsidian-900/60 p-3">
               <div className="flex items-center gap-2">
