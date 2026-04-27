@@ -44,7 +44,7 @@ function NeuralCortexSkeleton() {
 
 const STATS = [
   { label: "Model Routing", value: "Dynamic" },
-  {label: "Context Handling", value: "Adaptive" },
+  { label: "Context Handling", value: "Adaptive" },
   { label: "Expert Routes", value: "< 1ms" },
   { label: "Memory Stages", value: "3-tier" },
 ];
@@ -123,20 +123,30 @@ export function Hero() {
         </motion.h1>
 
         {/* Subtitle */}
-        <motion.p
-          initial={{ opacity: 0, y: 14 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.3 }}
-          className="mx-auto mt-7 max-w-2xl text-center text-base md:text-lg text-white/60 text-balance"
-        >Vaino AI is an orchestration engine that uses the
-
+       <motion.p
+  initial={{ opacity: 0, y: 14 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.7, delay: 0.3 }}
+  className="mx-auto mt-7 max-w-2xl text-center text-base md:text-lg text-white/60 text-balance"
+>
+  Vaino AI is a Human Intelligence Engine powered by a{" "}
   <span className="text-white/85 font-medium">
-  {" "}
-            Agentic Orchestration Matrix (AoM)
-          </span>  to route specialized models for real-time planning, reasoning, and execution. It adapts to user context, inputs, and environment for globally aware, context-driven decision making.
-
-        </motion.p>
-
+    first-of-its-kind Agentic Orchestration Matrix (AoM)
+  </span>
+  . Routing through a{" "}
+  <span className="text-white/85 font-medium">
+    Mixture of Experts (MoE)
+  </span>
+  , it fuses live telemetry and user intent for real-time{" "}
+  <span className="text-white/85 font-medium">
+    Autonomous Agentic Execution
+  </span>
+  -accelerating the leap from{" "}
+  <span className="text-white/85 font-medium">
+    AI <span className="text-white/60">to</span> AGI (Artificial General Intelligence)
+  </span>
+  .
+</motion.p>
         {/* CTAs */}
         <motion.div
           initial={{ opacity: 0, y: 14 }}

@@ -78,10 +78,7 @@ export function TechnicalSummary() {
             <span className="text-white/85">synthetic data flywheels</span>{" "}
             and{" "}
             <span className="text-white/85">human-in-the-loop reinforcement</span>,
-            the system gets sharper with each session — not through
-            retraining, but through structured feedback built into every
-            interaction. It doesn't just know what happened yesterday; it is
-            actively learning from what is happening now.
+            the system gets sharper with each session. Structured feedback is built into every interaction. It doesn{"'"}t just know what happened yesterday{";"} it is actively learning from what is happening now.
           </p>
 
           {/* Flywheel visual */}

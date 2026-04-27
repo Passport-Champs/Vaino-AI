@@ -35,7 +35,7 @@ export function Architecture() {
           eyebrow="§ 03 · System Architecture"
           title="Built to learn."
           highlight="Continuously, in real time."
-          description="Vaino uses a three-stage memory pipeline backed by automated preference optimization. Outputs improve with every session — no manual retraining, no scheduled cycles."
+          description="Vaino uses a three-stage memory pipeline backed by automated preference optimization. Outputs improve with every session - no manual retraining, no scheduled cycles."
         />
 
         {/* Stage 1: Three-stage memory */}
@@ -85,7 +85,7 @@ const STAGES: {
     icon: Ear,
     name: "Input Layer",
     tag: "Stage 01 · Ingestion",
-    body: "Ingests live data — news feeds, market signals, travel alerts, social streams — and converts it into structured context in real time.",
+    body: "Ingests live data - news feeds, market signals, travel alerts, social streams - and converts it into structured context in real time.",
     meta: ["412k tok/s", "<8ms latency", "ephemeral"],
   },
   {
@@ -93,7 +93,7 @@ const STAGES: {
     icon: MemoryStick,
     name: "Active Context",
     tag: "Stage 02 · Session Memory",
-    body: "Holds the full active session state across a large context window — enabling multi-step reasoning, long-horizon planning, and complex task coordination.",
+    body: "Holds the full active session state across a large context window - enabling multi-step reasoning, long-horizon planning, and complex task coordination.",
     meta: ["10M+ tokens", "multi-turn", "session-scope"],
   },
   {
@@ -101,7 +101,7 @@ const STAGES: {
     icon: Database,
     name: "Knowledge Store",
     tag: "Stage 03 · Consolidation",
-    body: "High-value outputs and user context are stored in an encrypted vector database — retrieval-ready and persistently growing with every interaction.",
+    body: "High-value outputs and user context are stored in an encrypted vector database - retrieval-ready and persistently growing with every interaction.",
     meta: ["encrypted", "vector KB", "persistent"],
   },
 ];
@@ -262,7 +262,7 @@ function DpoFlow() {
           <p className="mt-4 text-sm md:text-base text-white/60 text-balance">
             When two models produce conflicting outputs, a Discriminator
             evaluates which path produced the better result and updates the
-            routing weights accordingly — automatically, on every cycle,
+            routing weights accordingly - automatically, on every cycle,
             with no human intervention required.
           </p>
 
@@ -472,7 +472,7 @@ function AdversarialCard() {
         The system critiques its own outputs before they reach you.
       </h4>
       <p className="mt-2 text-sm text-white/55 text-balance">
-        Before returning a result, Vaino runs an internal critique pass — a
+        Before returning a result, Vaino runs an internal critique pass - a
         generator/discriminator loop that stress-tests outputs for
         consistency, accuracy, and logical coherence.
       </p>
@@ -564,11 +564,11 @@ function RagCard() {
         </div>
       </div>
       <h4 className="mt-5 text-xl font-semibold tracking-tight text-white">
-        When Vaino doesn't know something, it goes and finds it.
+        When Vaino doesn{"'"}t know something, it goes and finds it.
       </h4>
       <p className="mt-2 text-sm text-white/55 text-balance">
-        Standard RAG retrieves from what's already indexed. Vaino detects
-        gaps in its own knowledge base and triggers a targeted crawl —
+        Standard RAG retrieves from what{"'"}s already indexed. Vaino detects
+        gaps in its own knowledge base and triggers a targeted crawl -
         indexing new information directly into the knowledge store before
         responding.
       </p>

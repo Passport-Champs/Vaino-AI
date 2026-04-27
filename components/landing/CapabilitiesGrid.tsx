@@ -27,7 +27,7 @@ type Capability = {
   level: 1 | 2 | 3;
   icon: LucideIcon;
   summary: string;
-  /** bento span — col × row */
+  /** bento span - col × row */
   span?: string;
 };
 
@@ -39,7 +39,7 @@ const CAPABILITIES: Capability[] = [
     level: 3,
     icon: Route,
     summary:
-      "Each query is routed in sub-millisecond time to the most capable model for the task — by domain, complexity, and required depth.",
+      "Each query is routed in sub-millisecond time to the most capable model for the task - by domain, complexity, and required depth.",
     span: "md:col-span-2",
   },
   {
@@ -49,7 +49,7 @@ const CAPABILITIES: Capability[] = [
     level: 2,
     icon: Waves,
     summary:
-      "Factors in live data — news, markets, regional signals — to weight decisions against what is actually happening right now.",
+      "Factors in live data - news, markets, regional signals - to weight decisions against what is actually happening right now.",
   },
   {
     id: "debate",
@@ -67,7 +67,7 @@ const CAPABILITIES: Capability[] = [
     level: 2,
     icon: Layers,
     summary:
-      "Processes text, images, and structured data together — translating mixed inputs into a single coherent action or recommendation.",
+      "Processes text, images, and structured data together - translating mixed inputs into a single coherent action or recommendation.",
   },
   {
     id: "agentic",
@@ -76,7 +76,7 @@ const CAPABILITIES: Capability[] = [
     level: 3,
     icon: Network,
     summary:
-      "Goes beyond generating a plan — actually executes it. Runs code, calls APIs, navigates workflows, handles bookings. No hand-holding required.",
+      "Goes beyond generating a plan - actually executes it. Runs code, calls APIs, navigates workflows, handles bookings. No hand-holding required.",
     span: "md:col-span-2",
   },
   {
@@ -95,7 +95,7 @@ const CAPABILITIES: Capability[] = [
     level: 2,
     icon: Gauge,
     summary:
-      "Dynamically scales active model capacity — lighter for speed-sensitive tasks, heavier when depth and precision are required.",
+      "Dynamically scales active model capacity - lighter for speed-sensitive tasks, heavier when depth and precision are required.",
   },
   {
     id: "bias",
@@ -104,7 +104,7 @@ const CAPABILITIES: Capability[] = [
     level: 2,
     icon: SlidersHorizontal,
     summary:
-      "Adjust how Vaino communicates — from precise and formal to contextual and conversational — depending on who is asking and why.",
+      "Adjust how Vaino communicates - from precise and formal to contextual and conversational - depending on who is asking and why.",
     span: "md:col-span-2",
   },
   {
@@ -114,7 +114,7 @@ const CAPABILITIES: Capability[] = [
     level: 3,
     icon: BrainCog,
     summary:
-      "Every session refines Vaino's understanding of your context, objectives, and preferences — building a working model that improves with use.",
+      "Every session refines Vaino's understanding of your context, objectives, and preferences - building a working model that improves with use.",
   },
   {
     id: "lora",
@@ -123,7 +123,7 @@ const CAPABILITIES: Capability[] = [
     level: 2,
     icon: Binary,
     summary:
-      "Swaps domain-specific fine-tunes in real time — from legal reasoning to itinerary optimization — without reloading the underlying model.",
+      "Swaps domain-specific fine-tunes in real time - from legal reasoning to itinerary optimization - without reloading the underlying model.",
   },
   {
     id: "anomaly",
@@ -132,7 +132,7 @@ const CAPABILITIES: Capability[] = [
     level: 3,
     icon: Radar,
     summary:
-      "Compares live signals against historical baselines to flag emerging anomalies — relevant for travel risk, market exposure, and supply chain decisions.",
+      "Compares live signals against historical baselines to flag emerging anomalies - relevant for travel risk, market exposure, and supply chain decisions.",
   },
   {
     id: "pruning",
@@ -150,7 +150,7 @@ const CAPABILITIES: Capability[] = [
     level: 3,
     icon: Eye,
     summary:
-      "Parses imprecise, natural language requests into structured queries the underlying models can act on — bridging human intent and machine execution.",
+      "Parses imprecise, natural language requests into structured queries the underlying models can act on - bridging human intent and machine execution.",
   },
 ];
 
@@ -166,7 +166,7 @@ export function CapabilitiesGrid() {
         <SectionHeader
           eyebrow="§ 02 · Core Capabilities"
           title="Thirteen capabilities. One unified engine."
-          description="Each module is independently routable and purpose-built — but coordinated through a single orchestration layer. Together they define what intelligent execution actually looks like."
+          description="Each module is independently routable and purpose-built - but coordinated through a single orchestration layer. Together they define what intelligent execution actually looks like."
         />
 
         <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-4 auto-rows-[minmax(180px,auto)]">
