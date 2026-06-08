@@ -162,12 +162,16 @@ export function Hero() {
             <ArrowRight className="relative z-10 size-4 transition-transform group-hover:translate-x-0.5" />
             <span className="absolute inset-0 bg-[linear-gradient(110deg,transparent,rgba(255,255,255,0.14),transparent)] bg-[length:200%_100%] -translate-x-full group-hover:animate-[shimmer_1.6s_linear_infinite]" />
           </a>
+
           <a
-            href="#architecture"
-            className="group inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/[0.03] px-5 py-2.5 text-sm text-white/80 backdrop-blur transition hover:border-white/20 hover:bg-white/[0.06]"
+            href="#waitlist"
+            className="group inline-flex items-center gap-2 rounded-xl border border-ultra-400/30 bg-ultra-500/10 px-5 py-2.5 text-sm font-medium text-ultra-300 backdrop-blur transition hover:border-ultra-400/50 hover:bg-ultra-500/20"
           >
-            <Cpu className="size-4 text-cyan-300" />
-            Read the Whitepaper
+            <span className="relative flex size-1.5">
+              <span className="absolute inset-0 animate-ping rounded-full bg-ultra-400/60" />
+              <span className="relative size-1.5 rounded-full bg-ultra-400" />
+            </span>
+            Join the Waitlist
           </a>
         </motion.div>
 
