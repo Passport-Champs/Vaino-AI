@@ -3,11 +3,6 @@
 import { motion } from "framer-motion";
 import { useMemo } from "react";
 
-/**
- * A stylized "Neural Cortex" — concentric synaptic rings with a
- * deterministic web of nodes/edges. Uses SVG so it stays crisp and
- * keeps animation cost low versus a canvas simulation.
- */
 export function NeuralCortex() {
   const { nodes, edges } = useMemo(() => buildCortex(), []);
 

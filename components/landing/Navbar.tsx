@@ -2,12 +2,15 @@
 
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 
 const LINKS = [
-  { label: "Capabilities", href: "#capabilities" },
-  { label: "Architecture", href: "#architecture" },
-  { label: "Horizon", href: "#horizon" },
+  { label: "About", href: "/about" },
+  { label: "Neural Cortex", href: "/neuralcortex" },
+  { label: "Memory Model", href: "/memorymodel" },
+  { label: "AGI Horizon", href: "/agi" },
+    { label: "Capabilities", href: "/capabilities" }
 ];
 
 export function Navbar() {
@@ -38,7 +41,7 @@ export function Navbar() {
               : "border-white/5 bg-obsidian-900/40 backdrop-blur-md"
           }`}
         >
-          <a href="#top" className="flex items-center gap-2.5 group">
+          <Link href="/#top" className="flex items-center gap-2.5 group">
             <VainoLogo />
             <div className="flex items-baseline gap-2">
               <span className="text-sm font-semibold tracking-tight text-white">
@@ -51,37 +54,37 @@ export function Navbar() {
             <span className="hidden md:inline-flex font-mono-tech text-[10px] uppercase tracking-[0.2em] text-white/40 ml-3 border-l border-white/10 pl-3">
               v.0.9 · cortex
             </span>
-          </a>
+          </Link>
 
           <ul className="hidden md:flex items-center gap-1">
             {LINKS.map((l) => (
               <li key={l.href}>
-                <a
+                <Link
                   href={l.href}
                   className="relative rounded-lg px-3 py-1.5 text-sm text-white/70 transition hover:text-white hover:bg-white/5"
                 >
                   {l.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
 
           <div className="flex items-center gap-2">
-            <a
-              href="#horizon"
+            <Link
+              href="/#horizon"
               className="hidden sm:inline-flex items-center gap-1.5 font-mono-tech text-[11px] uppercase tracking-[0.14em] text-white/60 hover:text-white transition"
             >
               <span className="size-1.5 rounded-full bg-emerald-400 animate-node" />
               Live
-            </a>
-            <a
-              href="#horizon"
+            </Link>
+            <Link
+              href="/#horizon"
               className="group relative inline-flex items-center gap-1.5 overflow-hidden rounded-lg border border-cyan-400/30 bg-gradient-to-b from-cyan-500/20 to-cyan-500/5 px-3.5 py-1.5 text-xs font-medium text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] transition hover:border-cyan-400/60 hover:from-cyan-500/30"
             >
               <span className="relative z-10">Access</span>
               <ArrowUpRight className="relative z-10 size-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               <span className="absolute inset-0 bg-[linear-gradient(110deg,transparent,rgba(125,239,248,0.3),transparent)] bg-[length:200%_100%] -translate-x-full group-hover:animate-[shimmer_1.4s_linear_infinite]" />
-            </a>
+            </Link>
 
             <button
               aria-label="Toggle menu"

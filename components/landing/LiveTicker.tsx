@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 
 /**
- * "Sequential Particle Learning" ticker — represents live global data
+ * "Sequential Particle Learning" ticker - represents live global data
  * streams being ingested into the cortex in real time.
  */
 

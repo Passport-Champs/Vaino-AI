@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function TikTokMark({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 24" className={className} fill="currentColor">
@@ -34,16 +36,16 @@ const NAV = [
   {
     heading: "Engine",
     items: [
-      { label: "Capabilities", href: "#capabilities" },
-      { label: "Neural Cortex", href: "#architecture" },
-      { label: "Memory Model", href: "#architecture" },
-      { label: "AGI Horizon", href: "#horizon" },
+      { label: "Capabilities", href: "/capabilities" },
+      { label: "Neural Cortex", href: "/neuralcortex" },
+      { label: "Memory Model", href: "/memorymodel" },
+      { label: "AGI Horizon", href: "/agi" },
     ],
   },
   {
     heading: "Company",
     items: [
-      { label: "About", href: "#" },
+      { label: "About", href: "/about" },
       { label: "Research", href: "#" },
       { label: "Careers", href: "#" },
       { label: "Press", href: "#" },
@@ -125,12 +127,12 @@ export function Footer() {
               <ul className="mt-4 space-y-2.5">
                 {col.items.map((i) => (
                   <li key={i.label}>
-                    <a
+                    <Link
                       href={i.href}
                       className="text-sm text-white/70 transition hover:text-white"
                     >
                       {i.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>

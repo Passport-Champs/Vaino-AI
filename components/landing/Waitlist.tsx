@@ -31,7 +31,7 @@ export function Waitlist() {
       id="waitlist"
       className="relative isolate overflow-hidden py-28 md:py-36"
     >
-      {/* Deep indigo base fill — distinct from the rest of the page */}
+      {/* Deep indigo base fill - distinct from the rest of the page */}
       <div className="absolute inset-0 bg-[#06040f]" />
 
       {/* Radial violet bloom */}
